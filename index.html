@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Ali Malik | Mechanical Design Engineer</title>
+  <meta name="description" content="Mechanical Design and Product Development Engineer specializing in robotics, CAD, and manufacturing.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: #f4f6f8;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #252b33;
+    }
+
+    .logo { font-weight: bold; letter-spacing: 1px; }
+    nav a {
+      color: #c4cbd4;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+    }
+
+    .hero {
+      max-width: 1200px;
+      margin: auto;
+      padding: 90px 8%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+      min-height: 78vh;
+    }
+
+    .eyebrow {
+      color: #70b7ff;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    h1 span { color: #70b7ff; }
+
+    .intro {
+      color: #aab4c0;
+      font-size: 17px;
+      margin-bottom: 32px;
+      max-width: 530px;
+    }
+
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .primary { background: #70b7ff; color: #08111b; }
+    .secondary { border: 1px solid #596574; color: #f4f6f8; }
+
+    .hero-image {
+      width: 100%;
+      min-height: 340px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid #303844;
+      background: #151c25;
+    }
+
+    .note {
+      color: #758292;
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; padding-top: 60px; }
+      header { padding: 20px 6%; }
+      nav a { margin-left: 10px; }
+      .hero-image { min-height: 230px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SAHIL ALI MALIK</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero" id="home">
+    <section>
+      <p class="eyebrow">Mechanical Design · Robotics · Product Development</p>
+      <h1>Turning Ideas Into <span>Real-World</span> Products.</h1>
+      <p class="intro">
+        I'm a Mechanical Design and Product Development Engineer with
+        6 years of experience building products from concept and CAD
+        through prototyping, validation, and mass production.
+        My work spans robotics, precision mechanisms, enclosures,
+        and manufacturing-focused design.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="#projects">View My Projects ↗</a>
+        <a class="btn secondary" href="resume.pdf" target="_blank">Download Resume ↓</a>
+      </div>
+    </section>
+
+    <section>
+      <img class="hero-image"
+        src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=85"
+        alt="Engineering and mechanical product development workspace">
+      <p class="note">Concept · Design · Engineering · Manufacturing</p>
+    </section>
+  </main>
+
+  <section id="projects" style="padding:60px 8%; border-top:1px solid #252b33;">
+    <p class="eyebrow">Selected Work</p>
+    <h2>Engineering Projects</h2>
+    <p style="color:#aab4c0; margin-top:12px;">
+      Robotics, precision mechanisms, and production-ready mechanical design.
+      Project case studies coming soon.
+    </p>
+  </section>
+
+  <section id="contact" style="padding:50px 8%; border-top:1px solid #252b33;">
+    <p class="eyebrow">Get In Touch</p>
+    <h2>Let's Build Something.</h2>
+    <p style="color:#aab4c0; margin-top:12px;">
+      Connect with me on
+      <a href="https://www.linkedin.com/in/sahil-ali-malik-3a19881b4/"
+         style="color:#70b7ff;">LinkedIn</a>.
+    </p>
+  </section>
+</body>
+</html>
