@@ -139,71 +139,52 @@
     </section>
   </main>
 
-  <section id="projects" style="padding:60px 8%; border-top:1px solid #252b33;">
-    <p class="eyebrow">Selected Work</p>
-    <h2>Engineering Projects</h2>
-    <p style="color:#aab4c0; margin-top:12px;">
-      Robotics, precision mechanisms, and production-ready mechanical design.
-      Project case studies coming soon.
-    </p>
-  </section>
-
-  <section id="contact" style="padding:50px 8%; border-top:1px solid #252b33;">
-    <p class="eyebrow">Get In Touch</p>
-    <h2>Let's Build Something.</h2>
-    <p style="color:#aab4c0; margin-top:12px;">
-      Connect with me on
-      <a href="https://www.linkedin.com/in/sahil-ali-malik-3a19881b4/"
-         style="color:#70b7ff;">LinkedIn</a>.
-    </p>
-  </section>
-  
-<!-- Featured Engineering Project -->
-<style>
-  #featured-project {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 24px;
+  <style>
+  #projects {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 8%;
+    border-top: 1px solid #252b33;
   }
+  #projects h2 { font-size: 32px; margin-bottom: 12px; }
+  #projects .section-text { color: #aab4c0; margin-bottom: 32px; }
 
-  #featured-project .project-card {
+  #projects .project-card {
     overflow: hidden;
     border: 1px solid #343943;
     border-radius: 16px;
     background: #15181e;
     color: #f5f5f5;
   }
-
-  #featured-project .project-video {
+  #projects .project-video {
     display: block;
     width: 100%;
     max-height: 480px;
     object-fit: contain;
     background: #0c0e12;
   }
-
-  #featured-project .project-content {
-    padding: 24px;
-  }
-
-  #featured-project h2 {
-    margin-top: 0;
-    font-size: 28px;
-  }
-
-  #featured-project p {
-    line-height: 1.7;
-    color: #c4c8d0;
-  }
-
-  #featured-project .project-tags {
-    color: #b9c8ff;
+  #projects .project-content { padding: 24px; }
+  #projects .project-tags { color: #b9c8ff; font-size: 14px; margin-bottom: 8px; }
+  #projects .project-title { font-size: 28px; margin-bottom: 12px; }
+  #projects .project-title a { color: #f5f5f5; text-decoration: none; }
+  #projects .project-title a:hover { color: #70b7ff; }
+  #projects .project-content p { color: #c4c8d0; margin-bottom: 10px; }
+  #projects .case-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #70b7ff;
+    text-decoration: none;
+    font-weight: bold;
     font-size: 14px;
   }
 </style>
 
-<section id="featured-project">
-  <h2>Featured Projects</h2>
+<section id="projects">
+  <p class="eyebrow">Selected Work</p>
+  <h2>Engineering Projects</h2>
+  <p class="section-text">
+    Robotics, precision mechanisms, and production-ready mechanical design.
+  </p>
 
   <article class="project-card">
     <video
@@ -212,12 +193,9 @@
       muted
       playsinline
       preload="metadata"
-      poster=""
+      poster="images/camera-enclosure-render.png"
     >
-      <source
-        src="videos/camera-enclosure-zoom-slow.mp4"
-        type="video/mp4"
-      />
+      <source src="videos/camera-enclosure-zoom-slow.mp4" type="video/mp4" />
       Your browser does not support video playback.
     </video>
 
@@ -226,7 +204,9 @@
         MECHANICAL DESIGN · SEALING · PRODUCT VALIDATION
       </p>
 
-      <h2>IP69K-Rated Camera Enclosure</h2>
+      <h3 class="project-title">
+        <a href="projects/camera-enclosure.html">IP69K-Rated Camera Enclosure</a>
+      </h3>
 
       <p>
         Designed and developed a sealed camera enclosure
@@ -244,9 +224,23 @@
         <strong>Validation:</strong>
         IP67 in-house testing and IP69K laboratory validation.
       </p>
+
+      <a class="case-link" href="projects/camera-enclosure.html">View case study →</a>
     </div>
   </article>
 </section>
+
+  <section id="contact" style="padding:50px 8%; border-top:1px solid #252b33;">
+    <p class="eyebrow">Get In Touch</p>
+    <h2>Let's Build Something.</h2>
+    <p style="color:#aab4c0; margin-top:12px;">
+      Connect with me on
+      <a href="https://www.linkedin.com/in/sahil-ali-malik-3a19881b4/"
+         style="color:#70b7ff;">LinkedIn</a>.
+    </p>
+  </section>
+  
+
 
 </body>
 </html>
