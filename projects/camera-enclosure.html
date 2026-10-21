@@ -1,123 +1,127 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IP69K-Rated Camera Enclosure | Mechanical Design Portfolio</title>
+  <title>IP69K-Rated Camera Enclosure | Sahil Ali Malik</title>
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      margin: 0;
-      background: #0d1117;
-      color: #e6edf3;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: #f4f6f8;
       line-height: 1.7;
     }
 
-    main {
+    .wrap {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 48px 24px;
+      margin: auto;
+      padding: 40px 6% 80px;
     }
 
-    .back-link {
-      color: #8ab4ff;
+    .back {
+      display: inline-block;
+      color: #70b7ff;
       text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 30px;
     }
 
     .eyebrow {
-      margin-top: 48px;
-      color: #9eb7ff;
-      font-size: 13px;
-      letter-spacing: 2px;
+      color: #70b7ff;
+      font-size: 12px;
+      letter-spacing: 3px;
       text-transform: uppercase;
+      margin-bottom: 14px;
     }
 
     h1 {
-      margin-bottom: 12px;
-      font-size: clamp(32px, 6vw, 48px);
+      font-size: clamp(30px, 5vw, 46px);
       line-height: 1.15;
+      margin-bottom: 24px;
     }
 
     h2 {
+      font-size: 22px;
+      margin: 36px 0 14px;
+      color: #f4f6f8;
+    }
+
+    p { color: #c4c8d0; margin-bottom: 14px; }
+
+    video, .render {
+      display: block;
+      width: 100%;
+      max-height: 480px;
+      object-fit: contain;
+      background: #0c0e12;
+      border: 1px solid #343943;
+      border-radius: 14px;
+      margin: 24px 0;
+    }
+
+    ul { padding-left: 22px; }
+    li { color: #c4c8d0; margin-bottom: 10px; }
+
+    .impact {
       margin-top: 36px;
-      font-size: 23px;
+      padding: 24px;
+      border: 1px solid #343943;
+      border-radius: 14px;
+      background: #15181e;
     }
-
-    .subtitle {
-      color: #aeb8c5;
-    }
-
-    .project-panel {
-      margin-top: 32px;
-      padding: 28px;
-      border: 1px solid #303946;
-      border-radius: 16px;
-      background: #151b23;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    .back-bottom {
-      display: inline-block;
-      margin-top: 36px;
-    }
+    .impact h2 { margin-top: 0; }
+    .impact p { margin-bottom: 0; }
   </style>
 </head>
-
 <body>
-  <main>
-    <a class="back-link" href="../index.html">← Back to Portfolio</a>
+  <div class="wrap">
+    <a class="back" href="../index.html#projects">← Back to projects</a>
 
-    <p class="eyebrow">Mechanical Design · Product Development</p>
-
+    <p class="eyebrow">Mechanical Design · Sealing · Product Validation</p>
     <h1>IP69K-Rated Camera Enclosure</h1>
 
-    <p class="subtitle">
-      Mechanical Design | Sealing Engineering | Product Validation
+    <p>
+      Redesigned the Niqo Sense Camera to accommodate updated electronic
+      components, improve assembly, and achieve the required environmental
+      protection. The existing camera was not IP-rated, creating a
+      significant sealing and packaging challenge.
     </p>
 
-    <section class="project-panel">
-      <h2>Project Overview</h2>
+    <video
+      controls
+      muted
+      playsinline
+      preload="metadata"
+      poster="../images/camera-enclosure-render.png"
+    >
+      <source src="../videos/camera-enclosure-zoom-slow.mp4" type="video/mp4" />
+      Your browser does not support video playback.
+    </video>
+
+    <h2>What I Did</h2>
+    <ul>
+      <li>Conducted waterproofing experiments on the existing camera to identify leakage paths and establish design requirements.</li>
+      <li>Worked with cross-functional teams to define mechanical, electrical, sealing, and assembly requirements.</li>
+      <li>Designed and validated a dovetail-groove housing concept as an initial platform for waterproofing testing.</li>
+      <li>Designed the Niqo Sense Camera enclosure with integrated sealing features while accommodating updated PCB and electronic components.</li>
+      <li>Worked closely with the assembly team to incorporate fitment feedback and optimize the design with fewer iterations.</li>
+      <li>Coordinated with external machining vendors for rapid prototype parts and quick design iterations.</li>
+      <li>Released the final design within a tight development timeline and successfully achieved IP69K rating through laboratory testing.</li>
+    </ul>
+
+    <div class="impact">
+      <h2>Impact</h2>
       <p>
-        Designed and developed a sealed camera enclosure to accommodate
-        updated electronics and meet demanding ingress-protection
-        requirements.
+        Successfully developed an IP69K-rated camera from a previously
+        non-IP-rated design while accommodating updated electronics and
+        improving assembly. Rapid prototyping, in-house IP67 testing,
+        iterative design optimization, and close collaboration with
+        cross-functional teams played a key role in achieving the required
+        performance within the target timeline.
       </p>
-
-      <h2>Engineering Challenge</h2>
-      <p>
-        The existing camera design required improved ingress protection
-        while accommodating changes to the PCB and electronics packaging.
-      </p>
-
-      <h2>Design Approach</h2>
-      <ul>
-        <li>Developed the mechanical enclosure and sealing features.</li>
-        <li>Designed a test block to evaluate the housing seal.</li>
-        <li>Coordinated machining and manufacturing activities.</li>
-        <li>Supported prototype evaluation and ingress-protection testing.</li>
-      </ul>
-
-      <h2>Validation and Outcome</h2>
-      <p>
-        IP67 testing was conducted in-house, and IP69K laboratory
-        validation was achieved.
-      </p>
-
-      <h2>My Contribution</h2>
-      <p>
-        Mechanical enclosure design, sealing-interface development,
-        prototype evaluation, and manufacturing coordination.
-      </p>
-    </section>
-
-    <a class="back-link back-bottom" href="../index.html">
-      ← Return to Homepage
-    </a>
-  </main>
+    </div>
+  </div>
 </body>
 </html>
-
