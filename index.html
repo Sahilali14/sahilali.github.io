@@ -35,12 +35,10 @@
     .hero {
       max-width: 1200px;
       margin: auto;
-      padding: 90px 8%;
+      padding: 70px 8% 60px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 55px;
-      align-items: center;
-      min-height: 78vh;
+      grid-template-columns: 1fr;
+      gap: 40px;
     }
 
     .eyebrow {
@@ -81,13 +79,13 @@
     .primary { background: #70b7ff; color: #08111b; }
     .secondary { border: 1px solid #596574; color: #f4f6f8; }
 
-    .hero-image {
+        .hero-image {
       width: 100%;
-      min-height: 340px;
-      object-fit: cover;
+      height: auto;
+      display: block;
       border-radius: 10px;
       border: 1px solid #303844;
-      background: #151c25;
+      background: #0b0f14;
     }
 
     .note {
@@ -100,7 +98,7 @@
       .hero { grid-template-columns: 1fr; padding-top: 60px; }
       header { padding: 20px 6%; }
       nav a { margin-left: 10px; }
-      .hero-image { min-height: 230px; }
+  
     }
   </style>
 </head>
@@ -133,6 +131,8 @@
 
     <section>
       <img class="hero-image"
+  src="images/hero.png"
+  alt="Mechanical design process from CAD and exploded view to machining and waterproof validation">
         src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=85"
         alt="Engineering and mechanical product development workspace">
       <p class="note">Concept · Design · Engineering · Manufacturing</p>
