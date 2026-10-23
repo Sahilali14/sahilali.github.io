@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTK Base Station | RF Optimization & IP67 Design | Sahil Ali Malik</title>
+  <meta name="description" content="Mechanical design case study covering RTK base station RF integration, enclosure optimization, IP67 protection, tolerance control, and production validation.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: #f4f6f8;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 6% 80px;
+    }
+
+    .back {
+      display: inline-block;
+      color: #70b7ff;
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .back:hover { color: #ffffff; }
+
+    .eyebrow {
+      color: #70b7ff;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin: 36px 0 14px;
+      color: #f4f6f8;
+    }
+
+    p { color: #c4c8d0; margin-bottom: 14px; }
+
+    .hero {
+      width: 100%;
+      min-height: 220px;
+      margin: 24px 0;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border: 1px solid #343943;
+      border-radius: 14px;
+      background:
+        radial-gradient(ellipse at 75% 25%, #283c50 0%, transparent 45%),
+        linear-gradient(135deg, #171e27, #0c0e12 70%);
+    }
+
+    .hero-label {
+      color: #70b7ff;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      max-width: 560px;
+      margin-bottom: 0;
+      color: #d5dae2;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 24px 0;
+    }
+
+    .metric {
+      border: 1px solid #343943;
+      border-radius: 12px;
+      background: #15181e;
+      padding: 20px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 25px;
+      line-height: 1.3;
+      color: #70b7ff;
+      margin-bottom: 6px;
+    }
+
+    .metric span {
+      color: #c4c8d0;
+      font-size: 13px;
+    }
+
+    ul { padding-left: 22px; }
+    li { color: #c4c8d0; margin-bottom: 10px; }
+
+    .impact {
+      margin-top: 36px;
+      padding: 24px;
+      border: 1px solid #343943;
+      border-radius: 14px;
+      background: #15181e;
+    }
+
+    .impact h2 { margin-top: 0; }
+    .impact p { margin-bottom: 0; }
+
+    .note {
+      font-size: 13px;
+      color: #929ba8;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 520px) {
+      .wrap { padding-top: 28px; }
+      .metrics { grid-template-columns: 1fr; }
+      .hero { min-height: 190px; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back" href="../index.html#projects">← Back to projects</a>
+
+    <p class="eyebrow">Mechanical Design · RF Integration · Environmental Protection</p>
+
+    <h1>RTK Base Station — RF Optimization & IP67 Enclosure Design</h1>
+
+    <p>
+      Optimized the mechanical enclosure and component positioning of an
+      RTK base station used in an agricultural robotics platform. The project
+      focused on addressing communication performance challenges while
+      maintaining environmental protection, dimensional accuracy, and
+      manufacturing feasibility.
+    </p>
+
+    <div class="hero">
+      <p class="hero-label">Engineering Focus</p>
+      <p>
+        RF-aware enclosure design, antenna integration, IP67 protection,
+        component positioning, and production-ready mechanical engineering.
+      </p>
+    </div>
+
+    <div class="metrics">
+      <div class="metric">
+        <strong>IP67</strong>
+        <span>Ingress protection achieved</span>
+      </div>
+      <div class="metric">
+        <strong>±0.5 mm</strong>
+        <span>LED positioning tolerance in the first iteration</span>
+      </div>
+    </div>
+
+    <h2>Engineering Challenge</h2>
+    <p>
+      The existing arrangement of the antenna and enclosure components
+      affected communication performance and signal range. The design
+      needed to balance RF transparency, antenna placement, environmental
+      sealing, and accurate positioning of the external components.
+    </p>
+
+    <h2>My Contribution</h2>
+    <ul>
+      <li>Evaluated enclosure material and component placement requirements to support RF signal transmission.</li>
+      <li>Optimized the mechanical arrangement of the antenna, enclosure, and LED to address communication and packaging constraints.</li>
+      <li>Developed the enclosure design to achieve the required IP67 environmental protection.</li>
+      <li>Applied tolerance stack-up considerations to control LED positioning within ±0.5 mm during the first design iteration.</li>
+      <li>Considered sealing, assembly, and manufacturing requirements during mechanical design development.</li>
+      <li>Coordinated design refinement and production requirements to support a smooth transition from validation to mass production.</li>
+    </ul>
+
+    <h2>Design & Validation Approach</h2>
+    <ul>
+      <li>Reviewed the relationship between antenna location, enclosure material, and communication performance.</li>
+      <li>Refined enclosure geometry and component interfaces around environmental sealing requirements.</li>
+      <li>Applied dimensional control and tolerance analysis to achieve the required component positioning.</li>
+      <li>Validated the enclosure against the required IP67 protection level and progressed the design toward production.</li>
+    </ul>
+
+    <div class="impact">
+      <h2>Impact</h2>
+      <p>
+        Delivered a production-ready RTK base station enclosure design that
+        addressed RF integration challenges while achieving IP67 protection.
+        Accurate LED positioning within ±0.5 mm in the first iteration,
+        together with mechanical design optimization and manufacturing
+        coordination, supported the transition from concept to mass production.
+      </p>
+    </div>
+
+    <h2>Engineering Skills Demonstrated</h2>
+    <p>
+      Mechanical Product Design · RF-Aware Enclosure Engineering · Material
+      Selection · IP67 Sealing · Tolerance Stack-Up · Dimensional Control ·
+      Design for Manufacturing · Product Validation · Manufacturing Coordination
+    </p>
+
+    <p class="note">
+      Project visuals can be added here once the relevant CAD renders,
+      product photographs, and validation images are uploaded.
+    </p>
+  </main>
+</body>
+</html>
