@@ -16,12 +16,22 @@
       line-height: 1.7;
     }
 
-    .wrap {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 6% 80px;
-    }
+         .wrap {
+         max-width: 900px;
+         margin: 0 auto;
+         padding: 40px 24px 80px;
+       }
 
+       .project-video {
+         display: block;
+         width: 100%;
+         max-height: 480px;
+         object-fit: contain;
+         background: #0c0e12;
+         border: 1px solid #343943;
+         border-radius: 14px;
+         margin: 24px 0;
+       }
     .back {
       display: inline-block;
       color: #70b7ff;
@@ -124,7 +134,7 @@
     .impact p { margin-bottom: 0; }
 
     @media (max-width: 520px) {
-      .wrap { padding-top: 28px; }
+               .wrap { padding: 28px 16px 60px; }
       .metrics { grid-template-columns: 1fr; }
       .hero { padding: 22px; }
     }
@@ -153,7 +163,6 @@
   Your browser does not support video playback.
 </video>
 
-<img
   class="render"
   src="../images/rtk-base-station-views.png"
   alt="RTK Base Station rendered isometric and front views"
