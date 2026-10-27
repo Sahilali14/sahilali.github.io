@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actuation Mechanism for Live Manifold Control | Sahil Ali Malik</title>
+  <meta name="description" content="Mechanical engineering case study of a linear actuator-based live manifold control mechanism with laser depth sensing, sheet-metal mounts and shaft bellows for agricultural robots.">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0f14;
+      color: #f4f6f8;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .back {
+      display: inline-block;
+      color: #70b7ff;
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .back:hover { color: #ffffff; }
+
+    .eyebrow {
+      color: #70b7ff;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin: 36px 0 14px;
+      color: #f4f6f8;
+    }
+
+    p { color: #c4c8d0; margin-bottom: 14px; }
+
+    .project-video {
+      display: block;
+      width: 100%;
+      max-height: 480px;
+      object-fit: contain;
+      background: #0c0e12;
+      border: 1px solid #343943;
+      border-radius: 14px;
+      margin: 24px 0;
+    }
+
+    .caption {
+      color: #758292;
+      font-size: 13px;
+      margin: -10px 0 24px;
+    }
+
+    .focus {
+      margin: 24px 0;
+      padding: 32px;
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border: 1px solid #343943;
+      border-radius: 14px;
+      background:
+        radial-gradient(ellipse at 78% 20%, #283c50 0%, transparent 46%),
+        linear-gradient(135deg, #171e27, #0c0e12 75%);
+    }
+
+    .focus-label {
+      color: #70b7ff;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .focus p { margin-bottom: 0; }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 24px 0;
+    }
+
+    .metric {
+      padding: 22px;
+      border: 1px solid #343943;
+      border-radius: 12px;
+      background: #15181e;
+    }
+
+    .metric strong {
+      display: block;
+      color: #70b7ff;
+      font-size: 26px;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+
+    .metric span {
+      color: #c4c8d0;
+      font-size: 13px;
+    }
+
+    ul { padding-left: 22px; }
+
+    li {
+      color: #c4c8d0;
+      margin-bottom: 10px;
+    }
+
+    .impact {
+      margin-top: 36px;
+      padding: 24px;
+      border: 1px solid #343943;
+      border-radius: 14px;
+      background: #15181e;
+    }
+
+    .impact h2 { margin-top: 0; }
+    .impact p { margin-bottom: 0; }
+
+    @media (max-width: 520px) {
+      .wrap { padding: 28px 16px 60px; }
+      .metrics { grid-template-columns: 1fr; }
+      .focus { padding: 22px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+
+    <a class="back" href="../index.html#projects">← Back to projects</a>
+
+    <p class="eyebrow">
+      Mechanical Design · Actuation · Sheet Metal · Precision
+    </p>
+
+    <h1>Actuation Mechanism for Live Manifold Control</h1>
+
+    <img
+      class="project-video"
+      src="../images/actuation-mechanism.png"
+      alt="Live manifold actuation mechanism with linear actuator, linear guides and shaft bellows"
+    >
+    <p class="caption">
+      The actuation mechanism shown on its own, without the host machine.
+    </p>
+
+    <p>
+      Developed a live manifold actuation mechanism for the three-bay
+      Roboweeder to maintain a consistent ground-to-nozzle distance while
+      operating over uneven agricultural terrain.
+    </p>
+
+    <p>
+      The mechanism is an interface that goes onto both the Robo Thinner
+      and the Roboweeder products.
+    </p>
+
+    <div class="focus">
+      <p class="focus-label">Engineering Focus</p>
+      <p>
+        Linear actuation, mechanical calculations, sensor integration,
+        contamination protection, sheet-metal design, and precision
+        machining tolerances.
+      </p>
+    </div>
+
+    <div class="metrics">
+      <div class="metric">
+        <strong>1 mm</strong>
+        <span>Shaft-to-shaft alignment tolerance achieved during machining</span>
+      </div>
+
+      <div class="metric">
+        <strong>1st iteration</strong>
+        <span>Required functionality achieved in the first design iteration</span>
+      </div>
+    </div>
+
+    <h2>Engineering Challenge</h2>
+
+    <p>
+      Agricultural terrain is uneven, so the distance between the ground
+      and the spray nozzles changes as the machine moves. The manifold
+      position needed to be adjusted live to keep the nozzle height
+      consistent and maintain spray performance, while keeping the moving
+      parts protected from agricultural contamination.
+    </p>
+
+    <h2>My Contribution</h2>
+
+    <ul>
+      <li>
+        <strong>Mechanism and calculations:</strong>
+        Performed mechanical calculations and developed the linear
+        actuator-based mechanism.
+      </li>
+
+      <li>
+        <strong>Actuator selection:</strong>
+        Selected the LINAK linear actuator based on load, stroke and
+        operating requirements.
+      </li>
+
+      <li>
+        <strong>Depth sensing:</strong>
+        Integrated a laser-based depth sensing system to monitor the
+        ground-to-nozzle distance.
+      </li>
+
+      <li>
+        <strong>Structural modification:</strong>
+        Modified the Roboweeder structure to accommodate the actuator,
+        linear guides, bushings and manifold mechanism.
+      </li>
+
+      <li>
+        <strong>Mounting and protection:</strong>
+        Designed sheet-metal mounting components and shaft bellows to
+        protect moving components from agricultural contamination.
+      </li>
+
+      <li>
+        <strong>Drawings:</strong>
+        Developed detailed welding and manufacturing drawings.
+      </li>
+
+      <li>
+        <strong>Fit checks and tolerances:</strong>
+        Performed fit checks and tolerance analysis, achieving 1 mm
+        shaft-to-shaft alignment tolerance during machining.
+      </li>
+
+      <li>
+        <strong>First-iteration success:</strong>
+        Achieved the required functionality with the first design
+        iteration.
+      </li>
+    </ul>
+
+    <div class="impact">
+      <h2>Impact</h2>
+      <p>
+        Enabled live adjustment of the manifold position to maintain
+        consistent nozzle height and improve spray performance over uneven
+        terrain.
+      </p>
+    </div>
+
+    <h2>Engineering Skills Demonstrated</h2>
+
+    <p>
+      Mechanism Design · Mechanical Calculations · Linear Actuator
+      Selection · Sensor Integration · Linear Guides and Bushings ·
+      Sheet-Metal Design · Welding and Manufacturing Drawings · Fit Checks
+      and Tolerance Analysis · Contamination Protection
+    </p>
+
+  </main>
+</body>
+</html>
