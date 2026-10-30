@@ -514,7 +514,86 @@
 </article>
   
 </section>
-  
+  <style>
+  #improvements {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 8%;
+    border-top: 1px solid #252b33;
+  }
+  #improvements h2 { font-size: 32px; margin-bottom: 12px; }
+  #improvements .section-text { color: #aab4c0; margin-bottom: 32px; }
+
+  #improvements .improve-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  #improvements .improve-card {
+    overflow: hidden;
+    border: 1px solid #343943;
+    border-radius: 14px;
+    background: #15181e;
+  }
+
+  #improvements .improve-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #0c0e12;
+  }
+
+  #improvements .improve-body { padding: 16px 18px 18px; }
+
+  #improvements .improve-body h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+    color: #f5f5f5;
+  }
+
+  #improvements .improve-body p {
+    font-size: 14px;
+    color: #c4c8d0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: 600px) {
+    #improvements .improve-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<section id="improvements">
+  <p class="eyebrow">Additional Work</p>
+  <h2>Product Improvements</h2>
+  <p class="section-text">
+    Existing products I improved for performance, reliability and manufacturability.
+  </p>
+
+  <div class="improve-grid">
+
+    <article class="improve-card">
+      <img src="images/improvement-1.png" alt="PRODUCT NAME 1" loading="lazy">
+      <div class="improve-body">
+        <h3>PRODUCT NAME 1</h3>
+        <p>ONE-LINE IMPROVEMENT 1</p>
+      </div>
+    </article>
+
+    <article class="improve-card">
+      <img src="images/improvement-2.png" alt="PRODUCT NAME 2" loading="lazy">
+      <div class="improve-body">
+        <h3>PRODUCT NAME 2</h3>
+        <p>ONE-LINE IMPROVEMENT 2</p>
+      </div>
+    </article>
+
+  </div>
+</section>
   
   <section id="contact" style="padding:50px 8%; border-top:1px solid #252b33;">
     <p class="eyebrow">Get In Touch</p>
